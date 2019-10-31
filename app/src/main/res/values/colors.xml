@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="edt_username">#7ACBCBCB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btn_login">#0B92D5</color>
+    <color name="changepwdbg">#8D0A8FD4</color>
+    <color name="changepwdstrock">#65E1FD</color>
+    <color name="background">#000618</color>
+    <color name="onoff">#0A8FD4</color>
+    <color name="sileback">#489C9895</color>
+    <color name="sild">#042841</color>#1FBCE4
+    <color name="sildselectitemstroke">#1FBCE4</color>
+    <color name="unline">#F70703</color>
+    <color name="divider">#686868</color>
+    <color name="indicatorselected">#69E7FD</color>
+    <color name="dialog_btn_true">#E6E6E6</color>
+    <color name="dialog_btn_false">#ffffff</color>
+    <color name="pressed">#858181</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.boe.tvpad.customView.MyGridView
+        android:id="@+id/gv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:horizontalSpacing="@dimen/dp_17"
+        android:verticalSpacing="@dimen/dp_10"
+        android:numColumns="4"/>
+</LinearLayout>

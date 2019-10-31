@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CurrentPlayActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/currentplay_drawlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--主页面-->
+        <RelativeLayout
+            android:background="#1C172E"
+            android:id="@+id/rl_amin_drawlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/img_currentplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/img_noplay"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/dp_180"
+                android:src="@drawable/nocurrentplay"
+                />
+            <!--标题及返回-->
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+                android:baselineAligned="false"
+                android:visibility="visible">
+
+                <ImageView
+                    android:padding="@dimen/dp_10"
+                    android:id="@+id/fanhui"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_26"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_26"
+                    android:textColor="#fff"
+                    android:text=""
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+            <!--视频的控制导航-->
+            <RelativeLayout
+                android:id="@+id/rl_videocontroller"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_22"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_videoplay"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/pause" />
+
+                        <ImageView
+                            android:id="@+id/img_videochongbo"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginLeft="@dimen/dp_51"
+                            android:src="@drawable/zhongbo" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <!--图片集的控制导航-->
+            <RelativeLayout
+                android:id="@+id/rl_picturescontroller"
+                android:visibility="gone"
+                android:background="#41000000"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+                android:layout_alignParentBottom="true"
+                >
+                <ImageView
+                    android:id="@+id/img_auto"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_15"
+                    android:src="@drawable/icon_auto_on"
+                    android:layout_marginBottom="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_34"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_19"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_shangyige"
+                            android:layout_width="@dimen/dp_35"
+                            android:layout_height="@dimen/dp_35"
+                            android:src="@drawable/xiayishoucopy" />
+
+                        <ImageView
+                            android:id="@+id/img_pictureschongbo"
+                            android:layout_width="@dimen/dp_47"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_51"
+                            android:layout_marginRight="@dimen/dp_51"
+                            android:src="@drawable/zhongbo" />
+
+                        <ImageView
+                            android:id="@+id/img_xiayige"
+                            android:layout_width="@dimen/dp_35"
+                            android:layout_height="@dimen/dp_35"
+                            android:src="@drawable/xiayishou" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/img_slidright"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_11"
+                android:src="@drawable/slidrightliebiao"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_26"
+                />
+        </RelativeLayout>
+       <!-- 侧滑页面-->
+        <LinearLayout
+            android:id="@+id/ll_leftdrawlayout"
+            android:layout_width="@dimen/dp_225"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="#BC000000"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_39"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="播放列表"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/sp_11"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_download"
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:src="@drawable/icon_download" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="@color/divider"
+                />
+            <com.boe.tvpad.customView.MyListView
+                android:id="@+id/slidright_program_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

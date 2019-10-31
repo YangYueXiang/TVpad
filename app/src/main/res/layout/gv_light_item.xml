@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_100"
+    android:background="@drawable/alertdialog_right_selector"
+    android:layout_height="@dimen/dp_65">
+    <RelativeLayout
+        android:id="@+id/rl_lightback"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_65"
+        android:background="@drawable/lighton"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_lightitemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="集团介绍"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp_7"
+            />
+    </RelativeLayout>
+</LinearLayout>
